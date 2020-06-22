@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>Atividade TREINO Quinta - Aula 24 - 18/06</title>		
+		
+		<meta name="author" content="Vico">
+		<meta name="description" content="Atividade TREINO Quinta - Aula 24 - 18/06">
+		<meta name="keywords" content="atividade, webIII">
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<main class="container">
+			<form>
+				<fieldset>
+					<legend>Funcionário</legend>
+					
+					<div class="row">
+					
+						<div class="col">
+							<div class="form-group">
+								<label for="nome">Nome: </label>
+								<input type="text" class="form-control" id="nome">
+							</div>
+							<div class="form-group">
+								<label for="cpf">CPF: </label>
+								<input type="text" class="form-control" id="cpf">
+							</div>
+							<div class="form-group">
+								<label for="numero_dependentes">Número de Dependentes</label>
+								<input type="number" step="1" value="0" class="form-control" id="numero_dependentes">
+							</div>
+							<div class="form-group">
+								<label for="cargo">Cargo: </label>
+								<input type="text" class="form-control" id="cargo">
+							</div>
+							<div class="form-group">
+								<label for="valor_hora">Valor/hora: </label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text" id="cifrao1">R$</span>
+									</div>
+									<input type="number" step=".01" value="0.00" class="form-control" id="valor_hora">
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="hora_extra_50">Horas Extras feitas no mês (50%)</label>
+								<input type="number" class="form-control" value="0" id="hora_extra_50">
+							</div>
+							<div class="form-group">
+								<label for="hora_extra_100">Horas Extras feitas no mês (100%)</label>
+								<input type="number" class="form-control" value="0" id="hora_extra_100">
+							</div>
+							<div class="form-group">
+								<label for="grau_insalubridade">Grau de Insalubridade</label>
+								<select class="custom-select" id="grau_insalubridade">
+									<option selected>Sem Insalubridade</option>
+									<option value="1">Mínimo</option>
+									<option value="2">Médio</option>
+									<option value="3">Máximo</option>
+								</select>
+							</div>
+						</div>
+						
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+					<button type="clear" class="btn btn-primary">Limpar</button>
+				</fieldset>
+			</form>	
+		</main>
+
+		<!-- JS do Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>
